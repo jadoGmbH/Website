@@ -14,4 +14,5 @@ add_action( 'after_setup_theme', function() {
 
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( '101demands-main', get_template_directory_uri() . '/lib/css/main.css', [], '1.0.2' );
+    wp_enqueue_script( '101demands-main', get_template_directory_uri() . '/lib/js/main.js', [], '1.0.2', true );
 });

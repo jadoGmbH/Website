@@ -81,10 +81,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Offset sticky header when logged into WordPress Admin */
-body.admin-bar .j3-topbar {
-    top: 32px;
-}
+
 
 @media screen and (max-width: 782px) {
     body.admin-bar .j3-topbar {
@@ -145,8 +142,14 @@ body.admin-bar .j3-topbar {
     transition: color 0.15s ease;
 }
 
-.j3-nav a:hover {
+.j3-nav a:hover,
+.j3-nav a.current-menu-item {
     color: var(--j3-amber);
+}
+
+.j3-nav a.current-menu-item {
+    border-bottom: 2px solid var(--j3-amber);
+    padding-bottom: 2px;
 }
 
 .j3-btn-orange {
